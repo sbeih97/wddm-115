@@ -130,3 +130,36 @@ main p {
 .description {
   margin: 10px;
 }
+
+/* Style the sidebar */
+.sidebar {
+  background-color: rgb(84, 216, 172);
+  grid-area: sidebar;
+  padding: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
