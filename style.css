@@ -110,7 +110,6 @@ main p {
 }
 
 /* Content Section Style */
-/* Style for content sections with images */
 .content-with-image {
   display: flex;
   flex-direction: column;
@@ -118,19 +117,16 @@ main p {
   text-align: center;
 }
 
-/* Style for the image container */
 .image-container {
   max-width: 100%;
   overflow: hidden; /* Prevent images from expanding */
 }
 
-/* Style for the image */
 .image-container img {
   max-width: 100%;
   height: auto;
 }
 
-/* Style for the image description */
 .description {
-  margin-top: 10px; /* Add spacing between image and description */
+  margin: 10px;
 }
