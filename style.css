@@ -1,61 +1,80 @@
-.container{ 
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas: 
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
-    grid-gap: 0.2rem;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    color: rgb(59, 9, 9);
-
+  grid-gap: 0.2rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  color: rgb(59, 9, 9);
 }
 
-nav{ background-color: aqua;
-     grid-area: nav;
-    }
+nav {
+  background-color: aqua;
+  grid-area: nav;
+}
 
-main{ background-color: aquamarine;
-      grid-area: main;
-    }
+main {
+  background-color: aquamarine;
+  grid-area: main;
+}
 
-#sidebar{ background-color: rgb(84, 216, 172);
-          grid-area: sidebar;
-        }
+#sidebar {
+  background-color: rgb(84, 216, 172);
+  grid-area: sidebar;
+}
 
-#content1{ background-color: rgb(64, 163, 130);
-           grid-area: content1;
-        }
+#content1 {
+  background-color: rgb(64, 163, 130);
+  grid-area: content1;
+}
 
-#content2{ background-color: rgb(64, 100, 130);
-           grid-area: content2;
-        }
-        
-#content3{ background-color: rgb(64, 163, 100);
-           grid-area: content3;
-        }
-        
-footer{ background-color: rgb(13, 77, 77);
-        grid-area: footer;
-      }
+#content2 {
+  background-color: rgb(64, 100, 130);
+  grid-area: content2;
+}
 
-@media only screen and (max-width: 550px){
-    .container{ 
-        grid-template-columns: 1fr;
-        grid-template-columns: 0.2fr 1fr 2fr 2.5fr 2.5fr 2.5fr 0.5fr;
-        grid-template-areas: 
-        "nav"
-        "sidebar"
-        "main"
-        "content1"
-        "content2"
-        "content3"
-        "footer";
+#content3 {
+  background-color: rgb(64, 163, 100);
+  grid-area: content3;
+}
 
-    }
+footer {
+  background-color: rgb(13, 77, 77);
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-columns: 0.2fr 1fr 2fr 2.5fr 2.5fr 2.5fr 0.5fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
+
+/* Add styles for the Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  grid-area: nav;
+}
+
+.navbar-heading h3 {
+  margin: 20px;
 }
