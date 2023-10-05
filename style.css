@@ -78,3 +78,16 @@ nav {
 .navbar-heading h3 {
   margin: 20px;
 }
+
+/* Add styles for the Navbar links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 5px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
